@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.parlay-slide-enter {
+  transform: translateY(100%);
+}
+
+.parlay-slide-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-out;
+}
+
+.parlay-slide-exit {
+  transform: translateY(0);
+}
+
+.parlay-slide-exit-active {
+  transform: translateY(100%);
+  transition: transform 300ms ease-in;
+}

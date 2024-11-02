@@ -1,0 +1,43 @@
+.bet-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.bet-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+.bet-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bet-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+.match-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.match-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+
+.match-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.match-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
